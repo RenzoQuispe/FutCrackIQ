@@ -2,7 +2,7 @@
 
 ### Creación inicial del setup frontend:
 
-```
+```sh
 npm install -g @angular/cli
 ng new frontend
 cd frontend
