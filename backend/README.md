@@ -8,7 +8,7 @@ Iniciar:
 mkdir backend && cd backend
 npm init -y
 npm install express
-npm install --save-dev typescript ts-node @types/node @types/express nodemon
+npm install --save-dev typescript ts-node @types/node @types/express nodemon tsx
 npx tsc --init
 ```
 
@@ -28,4 +28,4 @@ Esto genera un dist/index.js que ya puede ejecutar Node:
 node dist/index.js
 ```
 
-####
+NOTA: Podemos usar `nodemon` para monitorear los archivos del proyecto, de tal manera que cuando detecta un cambio, reinicia automáticamente tu aplicación.
