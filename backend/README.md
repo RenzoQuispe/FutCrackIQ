@@ -33,6 +33,7 @@ NOTA: Podemos usar `nodemon` para monitorear los archivos del proyecto, de tal m
 ### Setup backend/.env
 
 ```
+PORT=
 DB_HOST=
 DB_USER=
 DB_PASSWORD=
