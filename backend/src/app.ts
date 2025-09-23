@@ -1,6 +1,7 @@
-import express, { type Application } from "express";
+import express, { type Application, type Request, type Response } from "express";
 import cors, { type CorsOptions } from "cors";
 import morgan from "morgan";
+import partidosUCLRoutes from "./routes/partidos-ucl.routes.js";
 
 const app: Application = express();
 
@@ -23,8 +24,10 @@ app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({ message: "FutCrackIQ API" });
+// Rutas
+app.get("/", (req: Request, res: Response) => {
+  res.json({ message: "FutCracksIQ API" });
 });
+app.use("/partidos-ucl", partidosUCLRoutes);
 
 export default app;
