@@ -29,3 +29,13 @@ node dist/index.js
 ```
 
 NOTA: Podemos usar `nodemon` para monitorear los archivos del proyecto, de tal manera que cuando detecta un cambio, reinicia automáticamente tu aplicación.
+
+### Setup backend/.env
+
+```
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+DB_PORT=
+```
