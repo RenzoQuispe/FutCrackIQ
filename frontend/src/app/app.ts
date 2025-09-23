@@ -7,8 +7,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
 })
+
 export class App {
   protected readonly title = signal('frontend');
 }
