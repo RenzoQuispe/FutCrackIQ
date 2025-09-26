@@ -1,4 +1,5 @@
-<div *ngIf="partido; else cargando" style="border: 5px solid #000000; background-color: #022eef;" class="mx-auto bg-gray-200 rounded-3xl h-[275px] w-[825px] text-black p-2 justify-between mt-5" >
+<div *ngIf="partido; else cargando" style="border: 5px solid #000000; background-color: #022eef;"
+    class="mx-auto bg-gray-200 rounded-3xl h-[300px] w-[825px] text-black p-2 justify-between mt-5">
     <p style="background-color: #0a0a61; " class="text-white text-2xl rounded-3xl p-2">
         ¿Cuál fue el resultado del partido
         <b>{{ partido.equipo_local }}</b> vs <b>{{ partido.equipo_visitante }}</b>
@@ -7,8 +8,10 @@
 
     <div class="flex flex-col items-center justify-center space-y-4 mt-5">
         <div>
-            <input type="text" [(ngModel)]="respuestaJugador1" class="border bg-white text-2xl font-bold border-black rounded-sm w-[35px] text-center" />
-            <input type="text" [(ngModel)]="respuestaJugador2" class="border bg-white text-2xl font-bold border-black rounded-sm w-[35px] text-center ml-5" />
+            <input type="text" [(ngModel)]="respuestaJugador1"
+                class="border bg-white text-2xl font-bold border-black rounded-sm w-[35px] text-center" />
+            <input type="text" [(ngModel)]="respuestaJugador2"
+                class="border bg-white text-2xl font-bold border-black rounded-sm w-[35px] text-center ml-5" />
         </div>
         <button (click)="comprobarRespuesta()" class="rounded-sm hover:brightness-125 mt-3 text-white"
             style="background-color: #0ab40a;" class="w-[150px] h-[40px] text-white rounded-2xl">
@@ -16,15 +19,24 @@
         </button>
     </div>
 
-    <div *ngIf="resultadoCorrecto !== null">
-        <p *ngIf="resultadoCorrecto; else incorrecto" style="color: green; background-color: #FFFFFF;" class="rounded-2xl p-1 mt-3">
+    <!-- Mensaje de resultado -->
+    <div *ngIf="resultadoCorrecto !== null && mostrarMensaje">
+        <p *ngIf="resultadoCorrecto; else incorrecto" class="rounded-2xl p-1 mt-3 text-green-600 bg-white">
             ¡Correcto! El resultado fue {{ partido.resultado }}
         </p>
         <ng-template #incorrecto>
-            <p style="color: red; background-color: #FFFFFF;" class="rounded-2xl p-1 mt-3">
+            <p class="rounded-2xl p-1 mt-3 text-red-600 bg-white">
                 Incorrecto. El resultado correcto era {{ partido.resultado }}
             </p>
         </ng-template>
+    </div>
+
+    <!-- Puntaje (se muestra después de 3s) -->
+    <div *ngIf="!mostrarMensaje" class="text-white rounded-3xl p-2 mt-3">
+        <p class="text-lg">
+            Puntuación actual: <b>{{ puntuacionActual }}</b> <br />
+            Puntuación máxima: <b>{{ puntuacionMaxima }}</b>
+        </p>
     </div>
 </div>
 
