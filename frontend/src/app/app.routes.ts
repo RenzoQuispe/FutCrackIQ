@@ -7,6 +7,12 @@ export const routes: Routes = [
         loadChildren: () =>
             import('./features/home/home-routing.module').then(m => m.HomeRoutingModule)
     },
+    {
+        path: 'juegos',
+        loadChildren: () =>
+            import('./features/juegos/juegos-routing.module').then(m => m.JuegosRoutingModule)
+    },
+
     { path: '**', redirectTo: '' }
 ];
 
