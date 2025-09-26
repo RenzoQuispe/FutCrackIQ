@@ -10,8 +10,8 @@ CREATE TABLE partidos_mundiales (
     id INT AUTO_INCREMENT PRIMARY KEY,
     año VARCHAR(20),
     fase VARCHAR(50),
-    equipo1 VARCHAR(100),
-    equipo2 VARCHAR(100),
+    pais1 VARCHAR(100),
+    pais2 VARCHAR(100),
     resultado VARCHAR(20)
 );
 CREATE TABLE partidos_libertadores (
