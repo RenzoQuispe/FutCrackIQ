@@ -12,7 +12,8 @@ import { PartidosUCL } from '../../../../services/partidos-ucl.service.js';
 })
 export class PartidosUCLComponent implements OnInit {
     partido?: partidoUCL;
-    respuestaJugador: string = '';
+    respuestaJugador1: string = '';
+    respuestaJugador2: string = '';
     resultadoCorrecto: boolean | null = null;
 
     constructor(private partidosService: PartidosUCL) { }
@@ -33,8 +34,9 @@ export class PartidosUCLComponent implements OnInit {
 
     comprobarRespuesta(): void {
         if (!this.partido) return;
+        if (!this.respuestaJugador1.trim() || !this.respuestaJugador2.trim()) return;
 
         this.resultadoCorrecto =
-            this.respuestaJugador.trim() === this.partido.resultado.trim();
+            this.respuestaJugador1.trim() + "-" + this.respuestaJugador2.trim() === this.partido.resultado.trim();
     }
 }
