@@ -1,0 +1,30 @@
+<div *ngIf="partido; else cargando">
+    <h2>Adivina el resultado del partido de UEFA Champions League</h2>
+    <p>
+        ¿Cuál fue el resultado del partido
+        <b>{{ partido.equipo_local }}</b> vs <b>{{ partido.equipo_visitante }}</b>
+        en la temporada <b>{{ partido.temporada }}</b> (<b>{{ partido.fase }}</b>)?
+    </p>
+
+    <input type="text" placeholder="Ej: 0-1" [(ngModel)]="respuestaJugador" class="border border-black rounded-sm" />
+
+    <button (click)="comprobarRespuesta()" class="rounded-sm hover:brightness-125 ml-5"
+        style="background-color: #07aef0; text-shadow: 0.3px 0.3px 0 #000, -0.3px -0.3px 0 #000, 0.3px -0.3px 0 #000, -0.3px 0.3px 0 #000; border: 0.2px solid black;">
+        Enviar respuesta
+    </button>
+
+    <div *ngIf="resultadoCorrecto !== null">
+        <p *ngIf="resultadoCorrecto; else incorrecto" style="color: green;">
+            ¡Correcto! El resultado fue {{ partido.resultado }}
+        </p>
+        <ng-template #incorrecto>
+            <p style="color: red;">
+                Incorrecto. El resultado correcto era {{ partido.resultado }}
+            </p>
+        </ng-template>
+    </div>
+</div>
+
+<ng-template #cargando>
+    <p>Cargando partido...</p>
+</ng-template>
