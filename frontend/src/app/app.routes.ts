@@ -12,6 +12,11 @@ export const routes: Routes = [
         loadChildren: () =>
             import('./features/juegos/juegos-routing.module').then(m => m.JuegosRoutingModule)
     },
+    {
+        path: 'auth',
+        loadChildren: () =>
+            import('./features/auth/auth-routing.module').then(m => m.AuthRoutingModule)
+    },
 
     { path: '**', redirectTo: '' }
 ];
