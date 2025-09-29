@@ -2,6 +2,7 @@ import express, { type Application, type Request, type Response } from "express"
 import cors, { type CorsOptions } from "cors";
 import morgan from "morgan";
 import partidosUCLRoutes from "./routes/partidos-ucl.routes.js";
+import partidosMundialRoutes from "./routes/partidos-mundial.routes.js";
 
 const app: Application = express();
 
@@ -29,5 +30,6 @@ app.get("/", (req: Request, res: Response) => {
   res.json({ message: "FutCracksIQ API" });
 });
 app.use("/partidos-ucl", partidosUCLRoutes);
+app.use("/partidos-mundial", partidosMundialRoutes);
 
 export default app;
