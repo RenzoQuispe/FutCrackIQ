@@ -51,7 +51,7 @@ export class PartidosUCLComponent implements OnInit {
             if (this.puntuacionActual > this.puntuacionMaxima) {
                 this.puntuacionMaxima = this.puntuacionActual;
                 if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
-                    localStorage.setItem("puntuacionMaxima", this.puntuacionMaxima.toString());
+                    localStorage.setItem("puntuacionMaxima-juegos-partidos-ucl", this.puntuacionMaxima.toString());
                 }
             }
         } else {
@@ -69,7 +69,7 @@ export class PartidosUCLComponent implements OnInit {
 
     cargarPuntuacionMaxima(): void {
         if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
-            const guardada = localStorage.getItem("puntuacionMaxima");
+            const guardada = localStorage.getItem("puntuacionMaxima-juegos-partidos-ucl");
             if (guardada) {
                 this.puntuacionMaxima = parseInt(guardada, 10);
             }
