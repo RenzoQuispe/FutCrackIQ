@@ -106,7 +106,7 @@ INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resul
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'Real Madrid (ESP)', 'AS Roma (ITA)', '2-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'Zenit St. Petersburg (RUS)', 'SL Benfica (POR)', '1-2');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'Chelsea FC (ENG)', 'Paris Saint-Germain (FRA)', '1-2');
-INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'Atlético Madrid (ESP)', 'PSV Eindhoven (NED)', '8-7');
+INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'Atlético Madrid (ESP)', 'PSV Eindhoven (NED)', '0-0(8-7)');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'Manchester City (ENG)', 'Dinamo Kiev (UKR)', '0-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'FC Barcelona (ESP)', 'Arsenal FC (ENG)', '3-1');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Round of 16', 'Bayern München (GER)', 'Juventus (ITA)', '4-2');
@@ -122,4 +122,4 @@ INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resul
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Semifinals', 'Atlético Madrid (ESP)', 'Bayern München (GER)', '1-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Semifinals', 'Bayern München (GER)', 'Atlético Madrid (ESP)', '2-1');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Semifinals', 'Real Madrid (ESP)', 'Manchester City (ENG)', '1-0');
-INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Final', 'Real Madrid (ESP)', 'Atlético Madrid (ESP)', '5-3');
+INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2015-2016', 'Final', 'Real Madrid (ESP)', 'Atlético Madrid (ESP)', '1-1(5-3)');

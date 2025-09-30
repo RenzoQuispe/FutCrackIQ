@@ -104,7 +104,7 @@ INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resul
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'Olympique Marseille (FRA)', 'Inter (ITA)', '1-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'Arsenal FC (ENG)', 'AC Milan (ITA)', '3-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'SL Benfica (POR)', 'Zenit St. Petersburg (RUS)', '2-0');
-INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'APOEL Nikosia (CYP)', 'Olympique Lyonnais (FRA)', '4-3');
+INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'APOEL Nikosia (CYP)', 'Olympique Lyonnais (FRA)', '1-0(4-3)');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'FC Barcelona (ESP)', 'Bayer Leverkusen (GER)', '7-1');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'Bayern München (GER)', 'FC Basel 1893 (SUI)', '7-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Round of 16', 'Inter (ITA)', 'Olympique Marseille (FRA)', '2-1');
@@ -121,5 +121,5 @@ INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resul
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Semifinals', 'Bayern München (GER)', 'Real Madrid (ESP)', '2-1');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Semifinals', 'Chelsea FC (ENG)', 'FC Barcelona (ESP)', '1-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Semifinals', 'FC Barcelona (ESP)', 'Chelsea FC (ENG)', '2-2');
-INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Semifinals', 'Real Madrid (ESP)', 'Bayern München (GER)', '1-3');
-INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Final', 'Bayern München (GER)', 'Chelsea FC (ENG)', '3-4');
+INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Semifinals', 'Real Madrid (ESP)', 'Bayern München (GER)', '2-1(1-3)');
+INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2011-2012', 'Final', 'Bayern München (GER)', 'Chelsea FC (ENG)', '1-1(3-4)');

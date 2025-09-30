@@ -106,7 +106,7 @@ INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resul
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'FC Porto (POR)', 'FC Basel 1893 (SUI)', '4-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'Chelsea FC (ENG)', 'Paris Saint-Germain (FRA)', '2-2');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'Bayern München (GER)', 'Shakhtar Donetsk (UKR)', '7-0');
-INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'Atlético Madrid (ESP)', 'Bayer Leverkusen (GER)', '3-2');
+INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'Atlético Madrid (ESP)', 'Bayer Leverkusen (GER)', '1-0(3-2)');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'AS Monaco (FRA)', 'Arsenal FC (ENG)', '0-2');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'FC Barcelona (ESP)', 'Manchester City (ENG)', '1-0');
 INSERT INTO partidos_ucl (temporada, fase, equipo_local, equipo_visitante, resultado) VALUES ('2014-2015', 'Round of 16', 'Borussia Dortmund (GER)', 'Juventus (ITA)', '0-3');
