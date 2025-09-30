@@ -40,9 +40,11 @@ export class PartidosMundialComponent implements OnInit {
         comprobarRespuesta(): void {
             if (!this.partido) return;
             if (!this.respuestaJugador1.trim() || !this.respuestaJugador2.trim()) return;
+
+            const resultadoLimpio = this.partido.resultado.split("(")[0].trim(); // no contar tanda de penales
     
             this.resultadoCorrecto =
-                this.respuestaJugador1.trim() + "-" + this.respuestaJugador2.trim() === this.partido.resultado.trim();
+                this.respuestaJugador1.trim() + "-" + this.respuestaJugador2.trim() === resultadoLimpio;
     
             this.mostrarMensaje = true;
     
